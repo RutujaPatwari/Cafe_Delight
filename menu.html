@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+    <title>Cafe Delight|Menu</title>
+    <script>
+      function openMenu(MenuName) {
+        var i;
+        var x = document.getElementsByClassName("Menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        document.getElementById(MenuName).style.display = "block";  
+      }
+      </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+    crossorigin="anonymous">
+  </script>
+
+    <style>
+     
+      #himg{
+        filter: blur(2px);
+        height: 500px;
+        box-shadow: inset;
+      }
+      nav{
+        color: black;
+        margin: 10px;
+      }
+      #midname:hover{
+    text-decoration:overline;
+}
+
+.nav-item>a:hover{
+    text-decoration:overline;
+}
+      #wal{
+        text-align:center ;
+         padding-top: 50cm; 
+         margin-top: 6px;
+      }
+      #info{
+        height: 0pc;
+        font-style: oblique;
+      }
+      #para{
+        color: rgb(183, 117, 26);
+        font-style: oblique;
+      }
+      #bar{
+        background-color:black;
+        padding-left:20px; 
+        
+      }
+      #btn{
+        
+        margin-right: 100px;
+        border-color: rgb(255, 255, 255);
+      }
+      #row1{
+        height: 150px;
+        padding: 8px; 
+        position: -ms-page;
+      }
+      #row2{
+         height: 150px; 
+         width: 200px;
+         padding: 8px; 
+         position: -ms-page;
+      }
+      .carousel-item img{
+        height: 200px;
+        
+        width: 400px;
+        position: -ms-page;
+      }
+      .carousel-control-prev{
+       width: 50px;
+       height: 50px;
+       background-color: brown;
+       border-radius: 50%;
+       top: calc(50% - 25%);
+      }
+      .carousel-control-next{
+       width: 50px;
+       height: 50px;
+       background-color: brown;
+       border-radius: 50%;
+       top: calc(50% - 25%);
+      }
+
+      #sec1{
+        background-color: gray;
+      }
+
+     .maps{
+      width:100%;
+      height:auto;
+      opacity:0.5;
+      }
+     footer{
+     margin-top: 10px;
+     display:flex;
+     flex:auto;
+     flex-direction: column;
+     }
+    .footicon{
+    height:20px;
+    width:20px;
+    padding:3px;
+    }
+
+    @media (max-width: 600px) {
+     
+    }
+    </style>
+  </head>
+  <body id="bdy">
+    <header >
+      <nav id="nav" class="navbar navbar-dark navbar-expand-lg navbar-togglable  bg-dark fixed-top " >
+          <div class="container ">
+        
+            <!-- Navbar brand (mobile) -->
+            <a id="nav" class="navbar-brand d-lg-none" href="./index.html">Cafe Delight</a>
+        
+            <!-- Navbar toggler -->
+            <button id="navbtn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Navbar collapse -->
+            <div class="collapse navbar-collapse  " id="navbarCollapse">
+        
+              <!-- Navbar nav -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-light " href="./about-us.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light active" href="./menu.html">MENU</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light " href="./reservation.html">RESERVATION</a>
+                </li>
+              </ul>
+        
+              <!-- Navbar brand -->
+              <a id="midname" class="navbar-brand d-none d-lg-flex mx-lg-auto " href="./index.html" style="font-family: 'Oooh Baby', cursive;">
+                Cafe Delight
+              </a>
+        
+              <!-- Navbar nav -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-light " href="./news-and-events.html">NEWS &amp; EVENTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="./gallery.html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light " href="./contact-us.html">CONTACT</a>
+                </li>
+              </ul>
+        
+            </div>
+          <!-- </div> -->
+        </nav>
+      </header>
+    <section id="sec">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="img-fluid">
+              <img src="https://img.rawpixel.com/private/static/images/website/2022-05/is16062-image-kwvyfkwr.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a4c54f77681e4e7f2cbb7e81b849941c" class="d-block w-100" id="himg" alt="food menu" >
+              <div class="carousel-caption d-none d-md-block" id="wal">
+                <h1 id="mainh" style="height: 200px;"><big>OUR MENU</big></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <center>
+        <div>
+          <div class="tit" id="info">
+            <h2> Cafe Delight Menu</h2>
+           </div>
+            <br>
+            <br>
+            <div>
+            <p id="para">We all are pleasure to serve you the best that we have. And trying to make you happy by the taste and will try to make more best items which would you like. Just stay with us and enjoy the food guys..</p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="w3-bar w3-black" class="btn" id="bar" >
+         <div class="w3-bar-w3-black">
+          <button class="w3-bar-item w3-button" onclick="openMenu('Main Items')" id="btn">Main Item</button>
+          <button class="w3-bar-item w3-button" onclick="openMenu('Desert')" id="btn">Desert</button>
+          <button class="w3-bar-item w3-button" onclick="openMenu('Drinks')" id="btn">Drinks</button>
+         </div>
+        </div>
+      </center>
+        <br>
+        <br>
+        <div id="Main Items" class="w3-container Menu">
+          <!---1st block-->
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <center>
+                  <img src=https://images.indulgexpress.com/uploads/user/imagelibrary/2019/9/10/original/Chicken_Whopper.png id="row1" >
+                </center>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Burger</h3>
+                  <div class="mb-1 text-muted">with pure vegies</div>
+                  <p class="card-text mb-auto">It is a good source of protein, iron, phosphorus, and several other nutrients. If you choose to eat your hamburger on a whole grain bun.</p>
+                </div> 
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <img src="https://kirbiecravings.com/wp-content/uploads/2019/09/easy-french-fries-1.jpg" id="row2">
+                  
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">French fries</h3>
+                  <div class="mb-1 text-muted">With various souces</div>
+                  <p class="mb-auto">French fries are served hot, either soft or crispy, and are generally eaten as part of snack </p>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <!--2nd block-->
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <center>
+                  <img src="https://i.ytimg.com/vi/JEeO_hagtVM/maxresdefault.jpg" id="row2">
+                </center>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">French Pasta</h3>
+                  <div class="mb-1 text-muted">with delicious cream</div>
+                  <p class="card-text mb-auto">Crozets is a traditional French pasta variety originating from Savoie. This tiny flat square-shaped pasta is made from wheat.</p>
+                </div> 
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <img src="https://static.toiimg.com/thumb/83740315.cms?imgsize=361903&width=800&height=800" id="row2">
+                  
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Sandwitch</h3>
+                  <div class="mb-1 text-muted">With pure vegies</div>
+                  <p class="mb-auto">A sandwich is a food typically consisting of vegetables, sliced cheese or meat, placed on or between slices of bread.</p>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <!--3rd block-->
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <center>
+                  <img src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg" id="row2">
+                </center>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Pizza</h3>
+                  <div class="mb-1 text-muted">with loaded cheese</div>
+                  <p class="card-text mb-auto">Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with various ingredients.</p>
+                </div> 
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <img src="https://www.thedreamafrica.com/wp-content/uploads/2017/08/KungPaoNoodlesShrimps.jpg" id="row1">
+                  
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">noodles</h3>
+                  <div class="mb-1 text-muted">With tasty masala</div>
+                  <p class="mb-auto">Noodles are a type of food made from unleavened dough which is rolled flat and cut, stretched or extruded, into long strips or strings.</p>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="Desert" class="w3-container Menu" style="display:none">
+          <!---1st block-->
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <center>
+                  <img src="https://natashaskitchen.com/wp-content/uploads/2020/08/Chocolate-Brownie-Recipe-5-500x500.jpg" id="row2">
+                </center>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Chocolate Brownie</h3>
+                  <div class="mb-1 text-muted">with loaded chocolate</div>
+                  <p class="card-text mb-auto">A chocolate brownie or simply a brownie is a square or rectangular chocolate baked confection.</p>
+                </div> 
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <img src="https://thumbs.dreamstime.com/b/two-donuts-sprinkle-isolated-white-background-142080187.jpg" id="row1">
+                  
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Donuts</h3>
+                  <div class="mb-1 text-muted">with chocolate chips</div>
+                  <p class="mb-auto">Doughnuts produced in sanitary baking conditions in grocery stores, bakeries, or franchises often come from pre-packaged mixes.</p>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <!--2nd block-->
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <center>
+                  <img src="https://b.zmtcdn.com/data/pictures/chains/1/18543621/cd88e6a58c67eb9089d9b6c3b4b9b405.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"  id="row2">
+                </center>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Belgian waffle</h3>
+                  <div class="mb-1 text-muted">with delicious cream</div>
+                  <p class="card-text mb-auto">Outside of Belgium, Belgian waffles are a variety of waffle with a lighter batter, larger squares, and deeper pockets than American waffles.</p>
+                </div> 
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <img src="https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Apple-Pie_EXPS_MRRA22_6086_E11_03_1b_v3.jpg" id="row2">
+                  
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Apple pie </h3>
+                  <div class="mb-1 text-muted">With pure vegies</div>
+                  <p class="mb-auto">An apple pie is a pie in which the principal filling ingredient is apples. The earliest printed recipe is from England. Apple pie is often served with whipped cream.</p>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <!--3rd block-->
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <center>
+                  <img src="https://www.simplyrecipes.com/thmb/n29cy_Z8pl8r8Au-MpA1Lp08kdg=/2000x1333/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2017__10__2017-10-28-Tiramisu-21-7de4673191d542039f47927fde4fee82.jpg" id="row2">
+                </center>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Tiramisu</h3>
+                  <div class="mb-1 text-muted">with delicious taste</div>
+                  <p class="card-text mb-auto">Tiramisu is a coffee-flavoured Italian dessert. It is made of ladyfingers dipped in coffee.</p>
+                </div> 
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <img src= "http://www.finedinings.com/oreoicecream.jpg" id="row2">
+                  
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Ice cream</h3>
+                  <div class="mb-1 text-muted">All the flavoures are available</div>
+                  <p class="mb-auto">Ice cream is a sweetened frozen food typically eaten as a snack or dessert. </p>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="Drinks" class="w3-container Menu" style="display:none">
+          <!---1st block-->
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <center>
+                  <img src=https://c2.staticflickr.com/2/1631/24976038066_a8dafb3baf_z.jpg id="row2">
+                </center>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Cold Coffee</h3>
+                  <div class="mb-1 text-muted">with loaded</div>
+                  <p class="card-text mb-auto">Iced coffee is a coffee beverage served cold. It may be prepared either by brewing coffee normally and then serving it over ice</p>
+                </div> 
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <img src="https://insanelygoodrecipes.com/wp-content/uploads/2020/07/Cup-Of-Creamy-Coffee.png" id="row2">
+                  
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Hot Coffee</h3>
+                  <div class="mb-1 text-muted">All the types are available</div>
+                  <p class="mb-auto">Coffee, a beverage that is typically served hot. Hot Coffee, Mississippi, a non census-designated community in Covington County, Mississippi</p>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <!--2nd block-->
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <center>
+                  <img src="https://assets.epicurious.com/photos/579909083a12dd9d56024018/master/pass/spiced-milk-tea-masala-chai.jpg" class="img-fluid" id="row2">
+                </center>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Masala Chaii</h3>
+                  <div class="mb-1 text-muted">with delicious taste</div>
+                  <p class="card-text mb-auto">TMasala chai is an Indian tea beverage made by boiling black tea in milk and water with a mixture of aromatic herbs and spices. </p>
+                </div> 
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <img src="https://stylesatlife.com/wp-content/uploads/2020/01/black-coffee-benefits.jpg.webp" id="row1">
+                  
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Black Coffee</h3>
+                  <div class="mb-1 text-muted">Without cream, pure healthy</div>
+                  <p class="mb-auto">Black coffee is simply coffee that is normally brewed without the addition of additives such as sugar, milk, cream, or added flavors.</p>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <!--3rd block-->
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block" >
+                  <center>
+                  <img src="https://hostthetoast.com/wp-content/uploads/2013/03/Boozy-Shamrock-Shake1.jpg" id="row2">
+                </center>
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0"> Milk Shake</h3>
+                  <div class="mb-1 text-muted">with loaded cream and so many flavors</div>
+                  <p class="card-text mb-auto">A milkshake is a sweet beverage made by blending milk, ice cream, and flavorings or sweeteners.</p>
+                </div> 
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-lg-block">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmq4TwwcaeZhaoONEdBeKeSnX-KVQslz9vHQ&usqp=CAU" id="row2">
+                  
+                </div>
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0">Juice</h3>
+                  <div class="mb-1 text-muted">With so many flavors without </div>
+                  <p class="mb-auto">Black coffee is simply coffee that is normally brewed without the addition of additives such as sugar, milk, cream, or added flavors.</p>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+    <br> 
+  </section>  
+    <hr>
+    <center>
+    <br>
+    <br>
+    <br>
+    
+    <section id="sec1">
+    <div class="tit" id="info">
+      <h2> Our Featured Dishes</h2>
+      <p>Our featured recipes are hand selected daily to give you the best taste as we can possible and trying to learn many more dishes as we can serve you. You can view what has been featured in the past.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Carousel indicators -->
+      <ol class="carousel-indicators">
+          <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+      </ol>
+      
+      <!-- Wrapper for carousel items -->
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="https://insanelygoodrecipes.com/wp-content/uploads/2020/07/Cup-Of-Creamy-Coffee.png" id="spe1" class="d-block " alt="Hot Coffee">
+              <div class="carousel-caption d-none d-md-block">
+                  <h>Hot Coffee</h>
+                  
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg"  id="spe1" class="d-block " alt="Pizza">
+              <div class="carousel-caption d-none d-md-block">
+                  <h>Pizza</h>
+                  
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="https://natashaskitchen.com/wp-content/uploads/2020/08/Chocolate-Brownie-Recipe-5-500x500.jpg" id="spe1" class="d-block " alt="Choco;ate Brownie">
+              <div class="carousel-caption d-none d-md-block">
+                  <h>Chocolate Brownie</h>
+                  
+              </div>
+          </div>
+      </div>
+  
+      <!-- Carousel controls -->
+      <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+      </a>
+   </div>
+   </section>
+    </center>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <footer class="py-7 py-md-9 bg-dark font-Franklin Gothic Medium">
+      <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.78466041528!2d73.7819924148149!3d18.628752987346143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9ba9ff8681f%3A0x1693d6e9f4d1d4ab!2sElpro%20City%20Square%20Mall!5e0!3m2!1sen!2sin!4v1661500481511!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="container px-4">
+        <div class="row gx-7">
+          <div class="col-sm-4">
+    
+            <!-- Heading -->
+            <h5 class="text-xs text-primary">
+              About Us
+            </h5>
+    
+            <!-- Text -->
+            <p class="mb-6 text-secondary">
+              Cafe delight owned by Samuel Paul is an international style all-day dining cafe chain incorporated in 2005 and currently running 2+ outlets in Pune, Mumbai. We have created the perfect place for the best brewing recipes mix of premium coffee along with fresh and appealing snacks of delectable taste.
+            </p>
+    
+          </div>
+          <div class="col-sm-4">
+    
+            <!-- Heading -->
+            <h5 class="text-xs text-primary">
+              Contact info
+            </h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled mb-6 ">
+              <li class="d-flex mb-2 text-secondary">
+                <img class="footicon" src="img/phone.png" alt="Phone No.:">+91883031644
+              </li>
+              <li class="d-flex mb-2 text-secondary">
+                <img class="footicon" src="img/gmail.png" alt="">cafedelight@gmail.com
+              </li>
+              <li class="d-flex text-secondary">
+                <img class="footicon" src="img/loaction.png" alt="" > Shop no.101,Elpro city square,PCMC,Pune
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-sm-4">
+    
+            <!-- Heading -->
+            <h5 class="text-xs text-primary">
+              Opening hours
+            </h5>
+    
+            <!-- Text -->
+            <div class="mb-3 text-secondary">
+              <div class="text-secondary">Monday - Thursday</div>
+              <div class="font-Franklin Gothic Medium text-secondary">10:00 AM - 11:00 PM</div>
+            </div>
+    
+            <!-- Text -->
+            <div class="mb-6 text-secondary">
+              <div class="text-secondary">Friday - Sunday</div>
+              <div class="font-Franklin Gothic Medium text-secondary">12:00 AM - 03:00 AM</div>
+            </div>
+    
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+    
+            <!-- Copyright -->
+            <div class="d-flex align-items-center text-secondary">
+              <hr class="hr-sm me-3" style="height: 1px;"> © 2021 cafedelight. All rights reserved.
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </footer>  
+  </body>

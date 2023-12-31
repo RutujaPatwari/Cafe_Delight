@@ -1,0 +1,145 @@
+body{
+    background-color:antiquewhite;
+}
+h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#midname:hover{
+    text-decoration:overline;
+}
+
+.nav-item>a:hover{
+    text-decoration:overline;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: black;
+    opacity: 0.5;
+}
+ h3{
+    font-size: 40px;
+    color: orange;
+    margin-top: 150px
+ }
+
+
+ .img img{
+        height: auto;
+        width: 100%;
+        margin-right: 20%;
+ }
+
+
+.container {
+  
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  button {
+    transition: all .3s ease;
+    color: #fff;
+    border: 2px solid rgb(255, 128, 0);
+    font-family:'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 70%;
+    line-height: 1;
+    font-size: 17px;
+    color: black;
+    font-size: 130%;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+}
+button:hover {
+    color: rgb(220, 69, 134);
+    background-color: rgb(255, 255, 255);
+}
+ .button1 {
+    transition: all .3s ease;
+    color: #fff;
+    border: 2px solid rgb(255, 255, 255);
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+   
+    line-height: 1;
+    font-size: 130%;
+    color: rgb(255, 255, 255);
+    font-size: 100%;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+}
+.button1:hover {
+    color: #ff8c00;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.button2{
+    width: 150px;
+   
+    display: block;
+    transition: all .3s ease;
+    color: #fff;
+    border: 2px solid rgb(255, 128, 0);
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: auto;
+    line-height: 0.1;
+    font-size: 100%;
+    color: black;
+    font-size: 77%;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 11px;
+    
+}
+.button2:hover {
+    color: #ff8c00;
+    background-color: rgb(255, 247, 247);
+}
+
+section
+{
+  padding:4%;
+  background:#e1e6ea;
+}
+.maps{
+    width:100%;
+    height:auto;
+    opacity:0.5;
+}
+footer{
+    margin-top: 10px;
+    display:flex;
+    flex:auto;
+    flex-direction: column;
+}
+.footicon{
+    height:20px;
+    width:20px;
+    padding:3px;
+}
+

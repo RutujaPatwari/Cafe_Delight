@@ -1,0 +1,168 @@
+*{
+  padding:0;
+  margin: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+  body{
+    background-color: aliceblue;
+  }
+  #midname:hover{
+    text-decoration:overline;
+}
+
+.nav-item>a:hover{
+    text-decoration:overline;
+}
+
+.active{
+  color:rgba(154, 115, 47, 0.882);
+}
+  form{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  #submit {
+    display:flex;
+    border-radius: 8px;
+    background-color:transparent;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+  }
+  input,select,option{
+    background-color: transparent;
+    padding: 10px;
+    width: 10cm;
+    margin:auto;
+    color:rgb(101, 101, 101);
+  }
+
+  .sec1{
+    background-color:black;
+  }
+
+  .cont>h1{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:70px;
+    font-weight: bold;
+    color:white;
+  }
+  #resbg{
+    display:flex;
+    width:1460px;
+    height:500px;
+    opacity:0.6;
+  }
+  
+.block2{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.sec2{
+  margin-top: 10px;
+}
+
+.sec3{
+  margin-top: 10px;
+}
+
+.block3{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:max-content;
+  padding:30px;
+  margin:auto;
+  border:1px solid goldenrod;
+}
+
+
+#telno{
+  font-family:'Times New Roman', Times, serif;
+  font-size:50px;
+  font-weight: bold;
+}
+footer{
+margin-top: 10px;
+display:flex;
+flex:auto;
+flex-direction: column;
+  }
+  .footicon{
+  height:20px;
+  width:20px;
+  padding:3px;
+}
+
+.maps{
+display:flex;
+flex-wrap: wrap;
+flex-direction: column;
+width:auto;
+height:200px;
+opacity:0.4;
+}
+
+
+@media (max-width: 600px) {
+
+    .body {
+      -webkit-flex-direction: column;
+      display:flex;
+      margin:auto;
+    }
+    .block1{
+        justify-content: center;
+        align-items: center;
+    }
+    .cont>h1{
+        display:flex;
+        position:absolute;
+        left:40px;
+        font-size:40px;
+        font-weight: bold;
+        float:center;
+    }
+    .sec3{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .block3{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width:fit-content;
+    }
+
+    input,select,option{
+        border-radius: 8px;
+        background-color: transparent;
+        padding: 10px;
+        width: 9cm;
+        margin:auto;
+        color:rgb(0, 0, 0);
+        justify-content: center;
+        align-items: center;
+      }
+
+    #checkbox{
+        border-color: black;
+        display:flex;
+    }
+.maps{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+ 
+}
