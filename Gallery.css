@@ -1,116 +1,99 @@
-body{
-  background-color:black;
-  
+body {
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(200, 173, 127);
+  text-align: center;
+  padding-top: 50px;
 }
+
+/* Header Styling */
 h1 {
-    position: relative;
-  top:30px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
   font-style: oblique;
-  size: 10px;
   color: rgb(200, 173, 127);
-  margin:0;
-  padding:0;
 }
 
-h2 {
-  position: relative;
-  top: 190px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: rgb(200, 173, 127);
-  margin:0;
-  padding:0;
-}
-
-h3{
-  position: relative;
-  top:310px;
-  left:550px;
-  font-family:Arial, Helvetica, sans-serif;
+h3 {
+  font-size: 20px;
   font-style: italic;
-  color:rgb(213, 182, 157);
-  margin:0;
-  padding:0;
-
+  color: rgb(213, 182, 157);
+  margin-top: 20px;
 }
-#icon{
-  width:350px;
+
+h4 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Image Grid Layout */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 50px auto;
   position: relative;
-  left:610px;
-  top:1250px;
-  margin:0;
-  padding:0;
 }
 
-h4{
-  color: rgb(200, 173, 127);
-  position: relative;
-  left:675px;
-  top:1260px;
-  margin:0;
-  padding:0;
+/* Default Image Styling */
+.gallery-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
-#box1{
-  height: 600px;
-  width:500px;
-  position: relative;
-  left:520px;
-  top:200px;
-  margin:0;
-  padding:0;
+/* Hover Effect */
+.gallery-container img:hover {
+  transform: scale(1.05);
 }
 
-#box2{
-  height: 400px;
-  width:500px;
-  position: relative;
-  left:20px;
-  margin:0;
-  padding:0;
-
-}
-#box3{
-  height: 640px;
-  width:500px;
-  position: relative;
-  left:1020px;
-  bottom:20px;
-  margin:0;
-  padding:0;
-
-
-}
-#box4{
-  height: 600px;
-  width:500px;
-  position: relative;
-  bottom:650px;
-  left:20px;
-  margin:0;
-  padding:0;
-
-}
-#box5{
-  height: 600px;
-  width:500px;
-  position: relative;
-  left:520px;
-  bottom:800px;
-  margin:0;
-  padding:0;
-
-}
-#box6{
-  height: 380px;
-  width:500px;
-  position: relative;
-  left:1020px;
-  bottom: 2200px;
-  margin:0;
-  padding:0;
-
+/* Position Adjustments */
+.gallery-container img:nth-child(4) { 
+  transform: translateY(-30px);
 }
 
+.gallery-container img:nth-child(5) { 
+  transform: translateY(-30px);
+}
 
+.gallery-container img:nth-child(6) { 
+  width: 80%;  
+  transform: translateY(-50px);
+}
+
+/* Coffee Icon */
+#icon {
+  width: 80px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .gallery-container {
+      grid-template-columns: repeat(2, 1fr);
+      width: 90%;
+  }
+
+  .gallery-container img:nth-child(6) { 
+      transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-container {
+      grid-template-columns: repeat(1, 1fr);
+      width: 95%;
+  }
+
+  .gallery-container img:nth-child(4),
+  .gallery-container img:nth-child(5),
+  .gallery-container img:nth-child(6) {
+      transform: translateY(0);
+  }
+}

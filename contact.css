@@ -1,87 +1,185 @@
-
-body{
-     background-image: url("/bg1.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-
-   
-     
-}
-h1{
-    position: relative;
-    top:120px;
-    color:rgb(200, 173, 127);
+body {
+    background-image: url("images/bg1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: white;
     text-align: center;
+    padding-top: 70px;
+}
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container h1 {
     font-size: 50px;
-    background-color: rgb(7, 0, 10);
-   
+    color: #c8ad7f;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-h2{
-    font-family: monospace;
-    
 
-}
-h3{
-    position: relative;
-    left:500px;
-    bottom:270px;
-    font-style:italic;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    overflow: hidden;
-}
-.contact-container{
-    position: relative;
-    top:200px;
-    text-align: center;
+.contact-container p {
     font-size: 20px;
-    color:rgb(200, 173, 127);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-    overflow: hidden;
-    
+    color: #c8ad7f;
+    font-style: italic;
 }
 
-input{
-    height: 20px;
-    width:400px;
+/* Contact Form */
+.contact-form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: left;
+    margin: auto;
 }
 
-::-webkit-input-placeholder{
-    place
-
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
 }
 
-.Insta{
-    float:left;
-    position :relative;
-    bottom:460px;
-    left:70px;
-    overflow: hidden;
-}
-h4{
-    position: relative;
-    bottom:20px;
-    float:right;
-    overflow: hidden;
-}
-.Facebook{
-    float:left;
-    position :relative;
-    bottom:360px;
-    right:100px;
-    overflow: hidden;
-    
-}
-h5{
-    position :relative;
-    bottom:375px;
-    right:100px;
-    float:left;
-    overflow: hidden;
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
 }
 
-footer{
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(200, 173, 127);
+    border: none;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #f8d49d;
+}
+
+/* Contact Details */
+.contact-details {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 50%;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(200, 173, 127);
+}
+
+/* Social Media */
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.social-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.social-item span {
+    font-size: 18px;
+    color: white;
+}
+
+/* Map & Footer */
+.google-map {
+    width: 80%;
+    height: 400px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+footer {
     background-color: rgb(7, 0, 10);
-    color:rgb(200, 173, 127);
-     text-align: center;
+    color: rgb(200, 173, 127);
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .contact-form {
+        width: 50%;
+    }
+    
+    .contact-details {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        width: 80%;
+    }
+
+    .contact-details {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .google-map {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container h1 {
+        font-size: 40px;
+    }
+
+    .contact-container p {
+        font-size: 18px;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .social-item {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .google-map {
+        height: 250px;
+    }
 }
